@@ -58,7 +58,7 @@ function getQuote() {
 
   $('#tweet-quote').attr(
     'href',
-    'https://twitter.com/intent/tweet?' +
+    'https://twitter.com/intent/tweet?hashtags=quotes&related=freecodecamp&text=' +
       encodeURIComponent('"' + currentQuote + '" ' + '-' + currentAuthor)
   );
 
