@@ -1,0 +1,67 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&family=Montserrat&display=swap');
+
+body{
+  background-color: #255;
+  color: #333;
+}
+
+#quote-box {
+  border-radius: 5px;
+  width: 500px;
+  padding: 40px 50px;
+  background-color: #fff;
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+}
+
+#text{
+  font-family: 'Lobster';
+  font-size: 30px;
+  text-align: center;
+}
+
+#author{
+  font-family: 'Montserrat';
+  font-size: 16px;
+  text-align: right;
+  padding: 50px 60px 30px 0px;
+}
+
+.button:hover{
+  cursor: pointer;
+  opacity: 0.9;
+}
+
+#tweet-quote{
+  float: left;
+  font-size: 1.2em;
+  padding: 0px;
+  padding-top: 10px;
+  text-align: center;
+  width: 40px;
+  height: 30px;
+  border: none;
+  border-radius: 5px;
+  color: #fff;
+  background-color: #255;
+  outline: none;
+}
+
+#new-quote {
+  font-family: 'Montserrat';
+  font-size: 0.8em;
+  float: right;
+  padding-top: 12px;
+  text-align: center;
+  width: 100px;
+  height: 30px;
+  border: none;
+  border-radius: 5px;
+  color: #fff;
+  background-color: #255;
+  outline: none;
+}
