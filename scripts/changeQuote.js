@@ -74,12 +74,12 @@ function getQuote() {
 */
   $('#text').animate({ opacity: 0 }, 500, function () {
     $(this).animate({ opacity: 1 }, 500);
-    $('#text').text(randomQuote.quote);
+    $('#text').text('"'+ randomQuote.quote + '"');
   });
 
   $('#author').animate({ opacity: 0 }, 500, function () {
     $(this).animate({ opacity: 1 }, 500);
-    $('#author').html(randomQuote.author);
+    $('#author').html('-' + randomQuote.author);
   });
 
   var color = Math.floor(Math.random() * colors.length);
