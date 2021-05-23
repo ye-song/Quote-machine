@@ -62,7 +62,6 @@ function getQuote() {
       encodeURIComponent('"' + currentQuote + '" ' + '-' + currentAuthor)
   );
 
-/*
   $('#tumblr-quote').attr(
     'href',
     'https://www.tumblr.com/widgets/share/tool?posttype=quote&tags=quotes,freecodecamp&caption=' +
@@ -71,7 +70,15 @@ function getQuote() {
       encodeURIComponent(currentQuote) +
       '&canonicalUrl=https%3A%2F%2Fwww.tumblr.com%2Fbuttons&shareSource=tumblr_share_button'
   );
-*/
+
+  $('#facebook-quote').click(function() {
+   FB.ui({
+     display: 'popup',
+     method: 'share',
+     quote: encodeURIComponent(currentQuote + currentAuthor),
+   }, function(response){});
+});
+
   $('#text').animate({ opacity: 0 }, 500, function () {
     $(this).animate({ opacity: 1 }, 500);
     $('#text').text('"'+ randomQuote.quote + '"');
