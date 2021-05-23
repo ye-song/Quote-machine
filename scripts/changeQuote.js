@@ -71,13 +71,10 @@ function getQuote() {
       '&canonicalUrl=https%3A%2F%2Fwww.tumblr.com%2Fbuttons&shareSource=tumblr_share_button'
   );
 
-  $('#facebook-quote').click(function() {
-   FB.ui({
-     display: 'popup',
-     method: 'share',
-     quote: encodeURIComponent(currentQuote + currentAuthor),
-   }, function(response){});
-});
+  $('#facebook-quote').attr(
+      'href',
+      'https://www.facebook.com'
+  );
 
   $('#text').animate({ opacity: 0 }, 500, function () {
     $(this).animate({ opacity: 1 }, 500);
