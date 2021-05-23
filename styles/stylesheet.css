@@ -36,19 +36,27 @@ body{
   opacity: 0.9;
 }
 
-#tweet-quote{
-  float: left;
-  font-size: 1.2em;
-  padding: 0px;
-  padding-top: 10px;
-  text-align: center;
-  width: 40px;
-  height: 30px;
-  border: none;
-  border-radius: 5px;
-  color: #fff;
-  background-color: #255;
-  outline: none;
+.button{
+    float: left;
+    font-size: 1.2em;
+    padding: 0px;
+    padding-top: 10px;
+    text-align: center;
+    width: 40px;
+    height: 30px;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    background-color: #255;
+    outline: none;
+}
+
+#tumblr-quote{
+  margin-left: 10px;
+}
+
+#facebook-quote{
+  margin-left: 10px;
 }
 
 #new-quote {
