@@ -78,6 +78,15 @@ function getQuote() {
   );
   */
 
+  $('#facebook-quote').click(function() {
+      FB.ui({
+          display: 'popup',
+          method: 'share',
+          href: 'https://ye-song.github.io/Quote-machine/',
+          quote: 'hello world',
+      }, function(response){});
+  };
+
 
   $('#text').animate({ opacity: 0 }, 500, function () {
     $(this).animate({ opacity: 1 }, 500);

@@ -18,22 +18,11 @@
       </div>
       <a id="tweet-quote" class="button" title="Tweet this quote!" target="_top"><i class="fa fa-twitter"></i></a>
       <a id="tumblr-quote" class="button" title="Tumblr this quote!" target="_top"><i class="fa fa-tumblr"></i></a>
-      <div id="facebook-quote" class="button" title="Facebook this quote!" target="_top"><i class="fa fa-facebook"></i></div>
+      <a id="facebook-quote" class="button" title="Facebook this quote!" target="_top"><i class="fa fa-facebook"></i></a>
       <div id="new-quote" class="button">
           New Quote
       </div>
     </div>
-
-    <script>
-    document.getElementById('facebook-quote').onclick = function() {
-      FB.ui({
-        display: 'popup',
-        method: 'share',
-        href: 'https://ye-song.github.io/Quote-machine/',
-        quote: 'hello world',
-      }, function(response){});
-    }
-    </script>
 
 <!--Good practice to place JS scripts at the end of the body so it does not hinder
 the page from loading rather than in the head -->
