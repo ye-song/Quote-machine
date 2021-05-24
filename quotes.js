@@ -1,5 +1,4 @@
-data ='{
-	"quotes": [
+const quotes = [
 
 {
        "quote":"Life isn’t about getting and having, it’s about giving and being.","author":"Kevin Kruse"},
@@ -206,4 +205,6 @@ data ='{
 {
        "quote":"If you can dream it, you can achieve it.","author":"Zig Ziglar"}
 ]
-}'
+
+
+export {quotes};

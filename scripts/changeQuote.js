@@ -1,7 +1,8 @@
 /* eslint-disable max-len */
 // eslint-disable-next-line no-unused-vars
+import {quotes} from '../quotes.js';
 const projectName = 'random-quote-machine';
-let quotesData;
+var quotesData = quotes;
 
 /*
   Code by Gabriel Nunes
@@ -25,6 +26,7 @@ var colors = [
 var currentQuote = '',
   currentAuthor = '';
 
+/*
 function getQuotes() {
   return $.ajax({
     headers: {
@@ -41,14 +43,14 @@ function getQuotes() {
     }
   });
 }
-
-
+*/
 
 function getRandomQuote() {
-  return quotesData.quotes[
-    Math.floor(Math.random() * quotesData.quotes.length)
+  return quotesData[
+    Math.floor(Math.random() * quotesData.length)
   ];
 }
+
 
 function getQuote() {
   let randomQuote = getRandomQuote();
@@ -102,10 +104,4 @@ function getQuote() {
   );
 }
 
-$(document).ready(function () {
-  getQuotes().then(() => {
-    getQuote();
-  });
-
-  $('#new-quote').on('click', getQuote);
-});
+$('#new-quote').on('click', getQuote);
