@@ -9,11 +9,11 @@ var colors = [
   '#e74c3c',
   '#9b59b6',
   '#FB6964',
-  '#342224',
+  '#653339',
   '#472E32',
-  '#BDBB99',
-  '#77B1A9',
-  '#73A857'
+  '#bfb618',
+  '#24d9c0',
+  '#53c317'
 ];
 var currentQuote = '';
 var currentAuthor = '';
