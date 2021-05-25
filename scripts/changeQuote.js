@@ -65,7 +65,7 @@ function getQuote() {
 
   $('#linkedin-quote').attr(
       'href',
-      'https://www.linkedin.com/shareArticle?summary='+
+      'https://www.linkedin.com/shareArticle?text='+
       encodeURIComponent('"' + currentQuote + '" ' + '-' + currentAuthor)
   );
 
