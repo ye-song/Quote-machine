@@ -26,7 +26,7 @@ var colors = [
 var currentQuote = '',
   currentAuthor = '';
 
-  function getQuotes() {
+function getQuotes() {
     return $.ajax({
       headers: {
         Accept: 'application/json'
@@ -41,7 +41,7 @@ var currentQuote = '',
         }
       }
     });
-  }
+}
 
 function getRandomQuote() {
   return quotesData.quotes[
@@ -70,12 +70,12 @@ function getQuote() {
       encodeURIComponent(currentQuote) +
       '&canonicalUrl=https%3A%2F%2Fwww.tumblr.com%2Fbuttons&shareSource=tumblr_share_button'
   );
-
+/*
   $('#facebook-quote').attr(
       'href',
       'https://www.facebook.com'
   );
-
+*/
   $('#text').animate({ opacity: 0 }, 500, function () {
     $(this).animate({ opacity: 1 }, 500);
     $('#text').text('"'+ randomQuote.quote + '"');
@@ -102,10 +102,20 @@ function getQuote() {
   );
 }
 
+function facebook() {
+    FB.ui({
+        display: 'popup',
+        method: 'share',
+        href: 'https://ye-song.github.io/Quote-machine/',
+        quote: encodeURIComponent('"' + currentQuote + '" ' + '-' + currentAuthor)
+    }, function(response){});
+}
+
 $(document).ready(function () {
   getQuotes().then(() => {
     getQuote();
   });
 
   $('#new-quote').on('click', getQuote);
+  $('#facebook-quote').on('click',facebook);
 });
