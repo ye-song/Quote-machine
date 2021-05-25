@@ -9,7 +9,7 @@
 </head>
 
 <body>
-    <script>
+    <!--<script>
     window.fbAsyncInit = function() {
         FB.init({
             appID            : 495681034886928,
@@ -19,11 +19,20 @@
         });
     };
     </script>
-    <script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js"></script>
+    <script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js"></script>-->
+    <script>
+    (function(d, s, id) {
+    var js, fjs = d.getElementsByTagName(s)[0];
+    if (d.getElementById(id)) return;
+    js = d.createElement(s); js.id = id;
+    js.src = "https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.6";
+    fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));
+    </script>
     <div id="quote-box">
-      <div id="text">
+      <div id="text" class="fb-quotable">
       </div>
-      <div id="author">
+      <div id="author" class="fb-quotable">
       </div>
       <a id="tweet-quote" class="button" title="Tweet this quote!" target="_top"><i class="fa fa-twitter"></i></a>
       <a id="tumblr-quote" class="button" title="Tumblr this quote!" target="_top"><i class="fa fa-tumblr"></i></a>
