@@ -64,7 +64,7 @@ function getQuote() {
 
   $('#tumblr-quote').attr(
     'href',
-    'https://www.tumblr.com/widgets/share/tool?posttype=quote&tags=quotes,freecodecamp&caption=' +
+    'https://www.tumblr.com/widgets/share/tool?posttype=quote&tags=quotes&caption=' +
       encodeURIComponent(currentAuthor) +
       '&content=' +
       encodeURIComponent(currentQuote) +
