@@ -62,12 +62,13 @@ function getQuote() {
       encodeURIComponent(currentQuote) +
       '&canonicalUrl=https%3A%2F%2Fwww.tumblr.com%2Fbuttons&shareSource=tumblr_share_button'
   );
-/*
+
   $('#linkedin-quote').attr(
       'href',
-      'https://www.facebook.com'
+      'https://www.linkedin.com/shareArticle?summary='+
+      encodeURIComponent('"' + currentQuote + '" ' + '-' + currentAuthor)
   );
-*/
+
   $('#text').animate({ opacity: 0 }, 500, function () {
     $(this).animate({ opacity: 1 }, 500);
     $('#text').text('"'+ randomQuote.quote + '"');
