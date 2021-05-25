@@ -23,8 +23,8 @@ var colors = [
   '#77B1A9',
   '#73A857'
 ];
-var currentQuote = '',
-  currentAuthor = '';
+var currentQuote = '';
+var currentAuthor = '';
 
 function getQuotes() {
     return $.ajax({
@@ -58,7 +58,7 @@ function getQuote() {
 
   $('#tweet-quote').attr(
     'href',
-    'https://twitter.com/intent/tweet?hashtags=quotes&related=freecodecamp&text=' +
+    'https://twitter.com/intent/tweet?text=' +
       encodeURIComponent('"' + currentQuote + '" ' + '-' + currentAuthor)
   );
 
