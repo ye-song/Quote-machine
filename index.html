@@ -20,6 +20,7 @@
     };
     </script>
     <script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js"></script>-->
+    <div id="fb-root"></div>
     <script>
     (function(d, s, id) {
     var js, fjs = d.getElementsByTagName(s)[0];
@@ -30,17 +31,18 @@
     }(document, 'script', 'facebook-jssdk'));
     </script>
     <div id="quote-box">
-      <div id="text" class="fb-quotable">
+      <div id="text">
       </div>
-      <div id="author" class="fb-quotable">
+      <div id="author">
       </div>
       <a id="tweet-quote" class="button" title="Tweet this quote!" target="_top"><i class="fa fa-twitter"></i></a>
-      <a id="tumblr-quote" class="button" title="Tumblr this quote!" target="_top"><i class="fa fa-tumblr"></i></a>
+      <a id="tumblr-quote" class="button" title="Quote on Tumblr!" target="_top"><i class="fa fa-tumblr"></i></a>
       <a id="facebook-quote" class="button" title="Facebook this quote!" target="_top"><i class="fa fa-facebook"></i></a>
       <div id="new-quote" class="button">
           New Quote
       </div>
     </div>
+    <div class="fb-quote"></div>
 
 <!--Good practice to place JS scripts at the end of the body so it does not hinder
 the page from loading rather than in the head -->
