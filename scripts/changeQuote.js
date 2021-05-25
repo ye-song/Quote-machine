@@ -92,7 +92,7 @@ function getQuote() {
 function twitter() {
     return window.open('https://twitter.com/intent/tweet?text=' + encodeURIComponent('"' + currentQuote + '" ' + '-' + currentAuthor),
     "_blank",
-    "toolbar=yes,scrollbars=yes,resizable=yes,height=400,width=450");
+    "toolbar=yes,scrollbars=yes,resizable=yes,top=80,left=300,height=400,width=450");
 }
 
 function linkedin() {
