@@ -47,7 +47,7 @@ function getQuote() {
 
   currentQuote = randomQuote.quote;
   currentAuthor = randomQuote.author;
-
+/*
   $('#tumblr-quote').attr(
     'href',
     'https://www.tumblr.com/widgets/share/tool?posttype=quote&tags=quotes&caption=' +
@@ -56,7 +56,7 @@ function getQuote() {
       encodeURIComponent(currentQuote) +
       '&canonicalUrl=https%3A%2F%2Fwww.tumblr.com%2Fbuttons&shareSource=tumblr_share_button'
   );
-
+*/
   $('#text').animate({ opacity: 0 }, 500, function () {
     $(this).animate({ opacity: 1 }, 500);
     $('#text').text('"'+ randomQuote.quote + '"');
@@ -89,6 +89,14 @@ function twitter() {
     "toolbar=yes,scrollbars=yes,resizable=yes,top=100,left=1150,height=350,width=450");
 }
 
+function tumblr() {
+    return window.open('https://www.tumblr.com/widgets/share/tool?posttype=quote&tags=quotes&caption=' +
+        encodeURIComponent(currentAuthor) + '&content=' + encodeURIComponent(currentQuote) +
+        '&canonicalUrl=https%3A%2F%2Fwww.tumblr.com%2Fbuttons&shareSource=tumblr_share_button',
+        "_blank",
+        "toolbar=yes,scrollbars=yes,resizable=yes,top=100,left=1150,height=350, width=450");
+}
+
 function linkedin() {
     return window.open("https://www.linkedin.com/sharing/share-offsite/?url=https://ye-song.github.io/Quote-machine/",
     "_blank",
@@ -103,6 +111,7 @@ $(document).ready(function () {
   $('#new-quote').on('click', getQuote);
   $('#linkedin-quote').on('click', linkedin);
   $('#tweet-quote').on('click', twitter);
+  $('#tumblr-quote').on('click', tumblr);
 // Usable Code snippet for sharing button to be added in (document).ready(function)
 // if I ever want to try
 /*
