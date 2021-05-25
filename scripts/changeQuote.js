@@ -65,8 +65,9 @@ function getQuote() {
 
   $('#linkedin-quote').attr(
       'href',
-      'https://www.linkedin.com/sharing/share-offsite/?url=https://ye-song.github.io/Quote-machine/'
-      //+ encodeURIComponent('"' + currentQuote + '" ' + '-' + currentAuthor)
+      function(){
+          return window.open("https://www.linkedin.com/sharing/share-offsite/?url=https://ye-song.github.io/Quote-machine/","linkedin", "height=600,width=650,resizable=1");
+      }
   );
 
   $('#text').animate({ opacity: 0 }, 500, function () {
