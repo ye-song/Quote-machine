@@ -9,17 +9,7 @@
 </head>
 
 <body>
-    <!--<script>
-    window.fbAsyncInit = function() {
-        FB.init({
-            appID            : 495681034886928,
-            autoLogAppEvents : true,
-            xfbml            : true,
-            version          : 'v10.0'
-        });
-    };
-    </script>
-    <script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js"></script>-->
+    <!-- Add FB quote plugin -->
     <div id="fb-root"></div>
     <script>
     (function(d, s, id) {
@@ -30,6 +20,8 @@
     fjs.parentNode.insertBefore(js, fjs);
     }(document, 'script', 'facebook-jssdk'));
     </script>
+
+    <!--Quote Box-->
     <div id="quote-box">
       <div id="text">
       </div>
@@ -37,11 +29,13 @@
       </div>
       <a id="tweet-quote" class="button" title="Tweet this quote!" target="_top"><i class="fa fa-twitter"></i></a>
       <a id="tumblr-quote" class="button" title="Quote on Tumblr!" target="_top"><i class="fa fa-tumblr"></i></a>
-      <a id="facebook-quote" class="button" title="Facebook this quote!" target="_top"><i class="fa fa-facebook"></i></a>
+      <a id="linkedin-quote" class="button" title="Quote on LinkedIn!" target="_top"><i class="fa fa-linkedin"></i></a>
       <div id="new-quote" class="button">
           New Quote
       </div>
     </div>
+
+    <!--Part of FB quote plugin-->
     <div class="fb-quote"></div>
 
 <!--Good practice to place JS scripts at the end of the body so it does not hinder
