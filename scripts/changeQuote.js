@@ -1,13 +1,5 @@
-/* eslint-disable max-len */
-// eslint-disable-next-line no-unused-vars
-//import {quotes} from '../quotes.js';
 const projectName = 'random-quote-machine';
 let quotesData;
-
-/*
-  Code by Gabriel Nunes
-  Modified by Todd Chaffee to use Camper gist for JSON Quote data.
-*/
 
 var colors = [
   '#16a085',
@@ -71,7 +63,7 @@ function getQuote() {
       '&canonicalUrl=https%3A%2F%2Fwww.tumblr.com%2Fbuttons&shareSource=tumblr_share_button'
   );
 /*
-  $('#facebook-quote').attr(
+  $('#linkedin-quote').attr(
       'href',
       'https://www.facebook.com'
   );
@@ -102,24 +94,16 @@ function getQuote() {
   );
 }
 
-function facebook() {
-    FB.ui({
-        display: 'popup',
-        method: 'share',
-        href: 'https://ye-song.github.io/Quote-machine/',
-        quote: encodeURIComponent('"' + currentQuote + '" ' + '-' + currentAuthor)
-    }, function(response){});
-}
-
 $(document).ready(function () {
   getQuotes().then(() => {
     getQuote();
   });
 
   $('#new-quote').on('click', getQuote);
-  $('#facebook-quote').on('click',facebook);
 
-  /*
+// Usable Code snippet for sharing button to be added in (document).ready(function)
+// if I ever want to try
+/*
   $("#btn_shareFB").click(function() {
 	window.open('https://www.facebook.com/sharer/sharer.php?u='+url,
 			  'facebook-share-dialog',
