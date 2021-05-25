@@ -47,16 +47,7 @@ function getQuote() {
 
   currentQuote = randomQuote.quote;
   currentAuthor = randomQuote.author;
-/*
-  $('#tumblr-quote').attr(
-    'href',
-    'https://www.tumblr.com/widgets/share/tool?posttype=quote&tags=quotes&caption=' +
-      encodeURIComponent(currentAuthor) +
-      '&content=' +
-      encodeURIComponent(currentQuote) +
-      '&canonicalUrl=https%3A%2F%2Fwww.tumblr.com%2Fbuttons&shareSource=tumblr_share_button'
-  );
-*/
+
   $('#text').animate({ opacity: 0 }, 500, function () {
     $(this).animate({ opacity: 1 }, 500);
     $('#text').text('"'+ randomQuote.quote + '"');
@@ -91,10 +82,10 @@ function twitter() {
 
 function tumblr() {
     return window.open('https://www.tumblr.com/widgets/share/tool?posttype=quote&tags=quotes&caption=' +
-        encodeURIComponent(currentAuthor) + '&content=' + encodeURIComponent(currentQuote) +
-        '&canonicalUrl=https%3A%2F%2Fwww.tumblr.com%2Fbuttons&shareSource=tumblr_share_button',
-        "_blank",
-        "toolbar=yes,scrollbars=yes,resizable=yes,top=100,left=1150,height=350, width=450");
+    encodeURIComponent(currentAuthor) + '&content=' + encodeURIComponent(currentQuote) +
+    '&canonicalUrl=https%3A%2F%2Fwww.tumblr.com%2Fbuttons&shareSource=tumblr_share_button',
+    "_blank",
+    "toolbar=yes,scrollbars=yes,resizable=yes,top=100,left=1150,height=350, width=450");
 }
 
 function linkedin() {
@@ -107,24 +98,8 @@ $(document).ready(function () {
   getQuotes().then(() => {
     getQuote();
   });
-
   $('#new-quote').on('click', getQuote);
   $('#linkedin-quote').on('click', linkedin);
   $('#tweet-quote').on('click', twitter);
   $('#tumblr-quote').on('click', tumblr);
-// Usable Code snippet for sharing button to be added in (document).ready(function)
-// if I ever want to try
-/*
-  $("#btn_shareFB").click(function() {
-	window.open('https://www.facebook.com/sharer/sharer.php?u='+url,
-			  'facebook-share-dialog',
-			  opts);
-  });
-
-  $("#btn_shareTWI").click(function() {
-    window.open('https://twitter.com/share?text=Share%20with%20twitter%20is%20so%20easy',
-			  'twitter-sahre-dialog',
-			  opts);
-  });
-*/
 });
