@@ -92,13 +92,13 @@ function getQuote() {
 function twitter() {
     return window.open('https://twitter.com/intent/tweet?text=' + encodeURIComponent('"' + currentQuote + '" ' + '-' + currentAuthor),
     "_blank",
-    "toolbar=yes,scrollbars=yes,resizable=yes,top=100,left=1300,height=300,width=450");
+    "toolbar=yes,scrollbars=yes,resizable=yes,top=100,left=1200,height=350,width=450");
 }
 
 function linkedin() {
     return window.open("https://www.linkedin.com/sharing/share-offsite/?url=https://ye-song.github.io/Quote-machine/",
     "_blank",
-    "toolbar=yes,scrollbars=yes,resizable=yes,height=400,width=450");
+    "toolbar=yes,scrollbars=yes,resizable=yes,top=100,left=1200,height=350,width=450");
 }
 
 $(document).ready(function () {
