@@ -64,9 +64,11 @@ function getQuote() {
   );
 
   $('#linkedin-quote').attr(
-      'href',
+      'onclick',
       function(){
-          return window.open("https://www.linkedin.com/sharing/share-offsite/?url=https://ye-song.github.io/Quote-machine/","linkedin", "height=600,width=650,resizable=1");
+          return window.open("https://www.linkedin.com/sharing/share-offsite/?url=https://ye-song.github.io/Quote-machine/",
+          "_blank",
+          "toolbar=yes,scrollbars=yes,resizable=yes,height=600,width=650");
       }
   );
 
