@@ -47,13 +47,7 @@ function getQuote() {
 
   currentQuote = randomQuote.quote;
   currentAuthor = randomQuote.author;
-/*
-  $('#tweet-quote').attr(
-    'href',
-    'https://twitter.com/intent/tweet?text=' +
-      encodeURIComponent('"' + currentQuote + '" ' + '-' + currentAuthor)
-  );
-*/
+
   $('#tumblr-quote').attr(
     'href',
     'https://www.tumblr.com/widgets/share/tool?posttype=quote&tags=quotes&caption=' +
@@ -92,13 +86,13 @@ function getQuote() {
 function twitter() {
     return window.open('https://twitter.com/intent/tweet?text=' + encodeURIComponent('"' + currentQuote + '" ' + '-' + currentAuthor),
     "_blank",
-    "toolbar=yes,scrollbars=yes,resizable=yes,top=100,left=1200,height=350,width=450");
+    "toolbar=yes,scrollbars=yes,resizable=yes,top=100,left=1150,height=350,width=450");
 }
 
 function linkedin() {
     return window.open("https://www.linkedin.com/sharing/share-offsite/?url=https://ye-song.github.io/Quote-machine/",
     "_blank",
-    "toolbar=yes,scrollbars=yes,resizable=yes,top=100,left=1200,height=350,width=450");
+    "toolbar=yes,scrollbars=yes,resizable=yes,top=100,left=1150,height=350,width=450");
 }
 
 $(document).ready(function () {
