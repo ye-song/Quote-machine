@@ -118,4 +118,18 @@ $(document).ready(function () {
 
   $('#new-quote').on('click', getQuote);
   $('#facebook-quote').on('click',facebook);
+
+  /*
+  $("#btn_shareFB").click(function() {
+	window.open('https://www.facebook.com/sharer/sharer.php?u='+url,
+			  'facebook-share-dialog',
+			  opts);
+  });
+
+  $("#btn_shareTWI").click(function() {
+    window.open('https://twitter.com/share?text=Share%20with%20twitter%20is%20so%20easy',
+			  'twitter-sahre-dialog',
+			  opts);
+  });
+*/
 });
