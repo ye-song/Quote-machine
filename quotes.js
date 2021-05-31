@@ -7,7 +7,7 @@ const quotes = [
 {
        "quote":"Strive not to be a success, but rather to be of value.","author":"Albert Einstein"},
 {
-       "quote":"Two roads diverged in a wood, and I—I took the one less traveled by, And that has made all the difference.","author":"Robert Frost"},
+       "quote":"Two roads diverged in a wood, and I took the one less traveled by, And that has made all the difference.","author":"Robert Frost"},
 {
        "quote":"I attribute my success to this: I never gave or took any excuse.","author":"Florence Nightingale"},
 {
@@ -47,7 +47,7 @@ const quotes = [
 {
        "quote":"I am not a product of my circumstances. I am a product of my decisions.","author":"Stephen Covey"},
 {
-       "quote":"Every child is an artist.  The problem is how to remain an artist once he grows up.","author":"Pablo Picasso"},
+       "quote":"Every child is an artist. The problem is how to remain an artist once he grows up.","author":"Pablo Picasso"},
 {
        "quote":"You can never cross the ocean until you have the courage to lose sight of the shore.","author":"Christopher Columbus"},
 {
@@ -59,19 +59,17 @@ const quotes = [
 {
        "quote":"The two most important days in your life are the day you are born and the day you find out why.","author":"Mark Twain"},
 {
-       "quote":"Whatever you can do, or dream you can, begin it.  Boldness has genius, power and magic in it.","author":"Johann Wolfgang von Goethe"},
+       "quote":"Whatever you can do, or dream you can, begin it. Boldness has genius, power and magic in it.","author":"Johann Wolfgang von Goethe"},
 {
        "quote":"The best revenge is massive success.","author":"Frank Sinatra"},
 {
-       "quote":"People often say that motivation doesn’t last. Well, neither does bathing.  That’s why we recommend it daily.","author":"Zig Ziglar"},
+       "quote":"People often say that motivation doesn’t last. Well, neither does bathing. That’s why we recommend it daily.","author":"Zig Ziglar"},
 {
        "quote":"Life shrinks or expands in proportion to one’s courage.","author":"Anais Nin"},
 {
        "quote":"If you hear a voice within you say “you cannot paint,” then by all means paint and that voice will be silenced.","author":"Vincent Van Gogh"},
 {
        "quote":"There is only one way to avoid criticism: do nothing, say nothing, and be nothing.","author":"Aristotle"},
-{
-       "quote":"Ask and it will be given to you; search, and you will find; knock and the door will be opened for you.","author":"Jesus"},
 {
        "quote":"The only person you are destined to become is the person you decide to be.","author":"Ralph Waldo Emerson"},
 {
@@ -91,9 +89,9 @@ const quotes = [
 {
        "quote":"Teach thy tongue to say, “I do not know,” and thous shalt progress.","author":"Maimonides"},
 {
-       "quote":"Start where you are. Use what you have.  Do what you can.","author":"Arthur Ashe"},
+       "quote":"Start where you are. Use what you have. Do what you can.","author":"Arthur Ashe"},
 {
-       "quote":"When I was 5 years old, my mother always told me that happiness was the key to life.  When I went to school, they asked me what I wanted to be when I grew up.  I wrote down ‘happy’.  They told me I didn’t understand the assignment, and I told them they didn’t understand life.","author":"John Lennon"},
+       "quote":"When I was 5 years old, my mother always told me that happiness was the key to life. When I went to school, they asked me what I wanted to be when I grew up. I wrote down ‘happy’. They told me I didn’t understand the assignment, and I told them they didn’t understand life.","author":"John Lennon"},
 {
        "quote":"Fall seven times and stand up eight.","author":"Japanese Proverb"},
 {
@@ -107,7 +105,7 @@ const quotes = [
 {
        "quote":"Life is not measured by the number of breaths we take, but by the moments that take our breath away.","author":"Maya Angelou"},
 {
-       "quote":"Happiness is not something readymade.  It comes from your own actions.","author":"Dalai Lama"},
+       "quote":"Happiness is not something readymade. It comes from your own actions.","author":"Dalai Lama"},
 {
        "quote":"If you’re offered a seat on a rocket ship, don’t ask what seat! Just get on.","author":"Sheryl Sandberg"},
 {
@@ -115,7 +113,7 @@ const quotes = [
 {
        "quote":"If the wind will not serve, take to the oars.","author":"Latin Proverb"},
 {
-       "quote":"You can’t fall if you don’t climb.  But there’s no joy in living your whole life on the ground.","author":"Unknown"},
+       "quote":"You can’t fall if you don’t climb. But there’s no joy in living your whole life on the ground.","author":"Unknown"},
 {
        "quote":"We must believe that we are gifted for something, and that this thing, at whatever cost, must be attained.","author":"Marie Curie"},
 {
@@ -127,7 +125,7 @@ const quotes = [
 {
        "quote":"I have been impressed with the urgency of doing. Knowing is not enough; we must apply. Being willing is not enough; we must do.","author":"Leonardo da Vinci"},
 {
-       "quote":"Limitations live only in our minds.  But if we use our imaginations, our possibilities become limitless.","author":"Jamie Paolinetti"},
+       "quote":"Limitations live only in our minds. But if we use our imaginations, our possibilities become limitless.","author":"Jamie Paolinetti"},
 {
        "quote":"You take your life in your own hands, and what happens? A terrible thing, no one to blame.","author":"Erica Jong"},
 {
@@ -159,7 +157,7 @@ const quotes = [
 {
        "quote":"The battles that count aren’t the ones for gold medals. The struggles within yourself–the invisible battles inside all of us–that’s where it’s at.","author":"Jesse Owens"},
 {
-       "quote":"Education costs money.  But then so does ignorance.","author":"Sir Claus Moser"},
+       "quote":"Education costs money. But then so does ignorance.","author":"Sir Claus Moser"},
 {
        "quote":"I have learned over the years that when one’s mind is made up, this diminishes fear.","author":"Rosa Parks"},
 {
@@ -169,7 +167,7 @@ const quotes = [
 {
        "quote":"Remember that not getting what you want is sometimes a wonderful stroke of luck.","author":"Dalai Lama"},
 {
-       "quote":"You can’t use up creativity.  The more you use, the more you have.","author":"Maya Angelou"},
+       "quote":"You can’t use up creativity. The more you use, the more you have.","author":"Maya Angelou"},
 {
        "quote":"Dream big and dare to fail.","author":"Norman Vaughan"},
 {
@@ -199,12 +197,12 @@ const quotes = [
 {
        "quote":"Either write something worth reading or do something worth writing.","author":"Benjamin Franklin"},
 {
-       "quote":"Nothing is impossible, the word itself says, “I’m possible!”","author":"–Audrey Hepburn"},
+       "quote":"Nothing is impossible, the word itself says, “I’m possible!”","author":"Audrey Hepburn"},
 {
        "quote":"The only way to do great work is to love what you do.","author":"Steve Jobs"},
 {
        "quote":"If you can dream it, you can achieve it.","author":"Zig Ziglar"}
 ]
 
-
+console.log(quotes.length);
 export {quotes};
